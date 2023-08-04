@@ -38,7 +38,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-https://github.com/jamesjbustos/creatorverse/assets/45052719/00085690-5cfe-4861-b9d3-41b63abf8c86
+https://github.com/jamesjbustos/creatorverse/assets/45052719/dba25494-dccc-46b9-806b-bf1587705d86
 
 ## Notes
 
