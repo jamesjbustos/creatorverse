@@ -86,9 +86,11 @@ main {
   justify-items: center;
 }
 
-.ShowCreators-title {
+.ShowCreators-title,
+.ShowCreators-subtitle {
   margin-left: 24px;
   margin-bottom: 10px;
+  color: white;
 }
 
 /* Card Component */

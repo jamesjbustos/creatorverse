@@ -4,6 +4,9 @@ const ShowCreators = ({ creators }) => {
   return (
     <div>
       <h1 className="ShowCreators-title">🎨 Creators</h1>
+      <p className="ShowCreators-subtitle">
+        Discover and add your favorite creators !
+      </p>
       <section className="ShowCreators">
         {/* Check if there are creators */}
         {creators.length > 0 ? (
