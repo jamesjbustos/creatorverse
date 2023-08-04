@@ -1,0 +1,293 @@
+/* Root theme modifications */
+
+:root {
+  --border-width: 2px;
+  --border-radius: 0.3rem;
+  background-color: #111111;
+  font-family: "Inter", sans-serif;
+
+  [role="link"],
+  a {
+    --color: none;
+    --background-color: none;
+    background-color: transparent;
+  }
+}
+
+:root[data-theme="dark"] {
+  --form-element-background-color: #2e2e30;
+  --form-element-border-color: none;
+  --primary: #238aff;
+  --primary-hover: #07f;
+  --form-element-color: white;
+  --color: white;
+}
+
+/* Material ui icons */
+
+.editIcon {
+  margin-right: 0.5em;
+}
+
+/* APP */
+
+.App {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0 24px;
+  border-bottom: 1px solid rgb(42, 42, 42);
+}
+
+.Header-title {
+  color: #f3f4f6;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.Header-nav ul li {
+  margin-left: 20px;
+}
+
+.Header-nav ul li a {
+  color: #f3f4f6;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+/* ShowCreators -- Homepage */
+
+.ShowCreators {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.ShowCreators-title {
+  margin-left: 24px;
+  margin-bottom: 10px;
+}
+
+/* Card Component */
+
+.Card {
+  background-size: cover;
+  /* background-position-y: 20%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  margin: 10px;
+  width: 100%;
+  max-width: 550px;
+  height: 340px;
+  position: relative;
+  border: 1px solid #333;
+}
+
+.Card-title {
+  color: white;
+}
+
+.Card,
+.backgroundImage {
+  background-color: #202020;
+}
+
+.Card-description {
+  font-size: 0.8em;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: white;
+}
+
+.Card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Card div {
+  position: relative;
+}
+
+.Card a,
+.Card .Link {
+  padding: 5px 10px;
+  color: white;
+}
+
+.Card-iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Creator Add-Edit form */
+
+.Creator-form {
+  width: 50%;
+  margin: auto;
+}
+
+.Creator-form h1 {
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 2em;
+}
+
+/* View Single Creator */
+
+.CreatorProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.CreatorProfile-image {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.CreatorProfile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.CreatorProfile-title {
+  font-size: 2.5em;
+  --typography-spacing-vertical: 1rem;
+  color: white;
+}
+
+.CreatorProfile-link {
+  color: #f3f4f6;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.CreatorProfile-description {
+  color: white;
+}
+
+.CreatorProfile-editLink {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.hr-section {
+  border: none;
+  border-top: 1px solid #333;
+  color: #333;
+  background-color: #333;
+  height: 1px;
+  width: 100%;
+}
+
+.Loading {
+  background-color: #111111;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Header {
+    padding: 0 24px;
+  }
+
+  .Header-nav ul li a {
+    font-size: 0.8em;
+  }
+
+  .Header-nav ul li {
+    margin-left: 10px;
+  }
+
+  .ShowCreators {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .Card {
+    height: 300px;
+  }
+
+  .CreatorProfile-info {
+    max-width: 350px;
+  }
+
+  .CreatorProfile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .Card-info {
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .Creator-form {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+/* Footer */
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  padding: 0 24px;
+  border-top: 1px solid rgb(42, 42, 42);
+  background-color: #111111;
+}
+
+.Footer-title {
+  color: #f3f4f6;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-size: 0.9em;
+  margin-bottom: 0 !important;
+}
