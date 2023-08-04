@@ -38,6 +38,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
+https://github.com/jamesjbustos/creatorverse/assets/45052719/00085690-5cfe-4861-b9d3-41b63abf8c86
+
 ## Notes
 
 This project was a lot of fun, I've never worked with a Supabase database before and the setup time and files required was thankfully minimal. Querying the db was also very seamless and allowed me to build the necessary functions with ease. Alongside this, designing for mobile responsiveness is something ive never done, i know it wasn't required but the challeng seemed fun. I definitely want to continue building this site as a challenge and adding features such as extra links and possibly a login feature.
